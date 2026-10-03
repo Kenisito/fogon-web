@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Eventos y catering - El Fogón de la Abuela."
+    />
+    <title>Eventos | El Fogón de la Abuela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"
+          ><span class="brand-icon">♨</span
+          ><span><strong>El Fogón</strong><small>de la Abuela</small></span></a
+        >
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+          ☰
+        </button>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Inicio</a>
+          <a class="active" href="#eventos">Eventos</a>
+          <a href="#paquetes">Paquetes</a>
+          <a href="#galeria-eventos">Galería</a>
+          <a href="index.html#nosotros">Nosotros</a>
+          <a href="#contacto-eventos">Contacto</a>
+        </nav>
+        <a class="btn btn-outline nav-cta" href="#contacto-eventos"
+          >Cotiza tu evento</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-events" id="eventos">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Catering & celebraciones</p>
+          <h1>Hacemos especiales<br />tus momentos más importantes</h1>
+          <p>
+            Buffet criollo para todo tipo de eventos, con atención personalizada
+            de principio a fin.
+          </p>
+          <a class="btn btn-primary" href="#contacto-eventos"
+            >Cotiza tu evento →</a
+          >
+        </div>
+        <span class="hero-script">Buena comida,<br />grandes historias</span>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="center-title">
+            <p class="eyebrow dark">Nos adaptamos a cada ocasión</p>
+            <h2>Tipos de eventos</h2>
+          </div>
+          <div class="event-types">
+            <article>
+              <img
+                src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=85"
+                alt=""
+              /><span>Cumpleaños</span>
+            </article>
+            <article>
+              <img
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=85"
+                alt=""
+              /><span>Bautizos</span>
+            </article>
+            <article>
+              <img
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=85"
+                alt=""
+              /><span>Matrimonios</span>
+            </article>
+            <article>
+              <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85"
+                alt=""
+              /><span>Eventos corporativos</span>
+            </article>
+            <article>
+              <img
+                src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=700&q=85"
+                alt=""
+              /><span>Reuniones familiares</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-title compact">
+            <div>
+              <p class="eyebrow dark">Todo lo que necesitas</p>
+              <h2>Nuestros servicios</h2>
+            </div>
+          </div>
+          <div class="service-grid">
+            <article>
+              <span>♨</span>
+              <h3>Buffet criollo personalizado</h3>
+            </article>
+            <article>
+              <span>✦</span>
+              <h3>Montaje y decoración básica</h3>
+            </article>
+            <article>
+              <span>☷</span>
+              <h3>Personal de atención</h3>
+            </article>
+            <article>
+              <span>♜</span>
+              <h3>Alquiler de menaje</h3>
+            </article>
+            <article>
+              <span>♡</span>
+              <h3>Asesoría en todo el proceso</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="paquetes">
+        <div class="container">
+          <div class="section-title compact">
+            <div>
+              <p class="eyebrow dark">Opciones para cada necesidad</p>
+              <h2>Paquetes de eventos</h2>
+            </div>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Paquete Básico</h3>
+              <p>Desde <strong>S/ 35</strong> por persona</p>
+              <ul>
+                <li>3 fondos a elegir</li>
+                <li>1 entrada</li>
+                <li>1 postre</li>
+                <li>Personal de atención</li>
+              </ul>
+              <button class="btn btn-primary details-btn" data-package="Básico">
+                Ver detalle
+              </button>
+            </article>
+            <article class="price-card featured">
+              <div class="badge">Más solicitado</div>
+              <h3>Paquete Familiar</h3>
+              <p>Desde <strong>S/ 45</strong> por persona</p>
+              <ul>
+                <li>4 fondos a elegir</li>
+                <li>2 entradas</li>
+                <li>2 postres</li>
+                <li>Personal de atención</li>
+                <li>Montaje básico</li>
+              </ul>
+              <button
+                class="btn btn-primary details-btn"
+                data-package="Familiar"
+              >
+                Ver detalle
+              </button>
+            </article>
+            <article class="price-card">
+              <h3>Paquete Premium</h3>
+              <p>Desde <strong>S/ 60</strong> por persona</p>
+              <ul>
+                <li>5 fondos a elegir</li>
+                <li>3 entradas</li>
+                <li>3 postres</li>
+                <li>Personal de atención</li>
+                <li>Montaje y decoración</li>
+                <li>Opciones adicionales</li>
+              </ul>
+              <button
+                class="btn btn-primary details-btn"
+                data-package="Premium"
+              >
+                Ver detalle
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-title compact">
+            <div>
+              <p class="eyebrow dark">Un proceso simple</p>
+              <h2>Cómo trabajamos</h2>
+            </div>
+          </div>
+          <div class="steps">
+            <div>
+              <span>1</span>
+              <h3>Cuéntanos</h3>
+              <p>Sobre tu evento</p>
+            </div>
+            <div>
+              <span>2</span>
+              <h3>Cotizamos</h3>
+              <p>Te enviamos una propuesta</p>
+            </div>
+            <div>
+              <span>3</span>
+              <h3>Reserva</h3>
+              <p>Asegura tu fecha</p>
+            </div>
+            <div>
+              <span>4</span>
+              <h3>Disfruta</h3>
+              <p>Nos encargamos del resto</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="galeria-eventos">
+        <div class="container">
+          <div class="section-title compact">
+            <div>
+              <p class="eyebrow dark">Momentos que inspiran</p>
+              <h2>Galería de eventos</h2>
+            </div>
+          </div>
+          <div class="tabs" data-tab-group="events">
+            <button class="tab active" data-tab="celebraciones">
+              Celebraciones
+            </button>
+            <button class="tab" data-tab="montajes">Montajes</button>
+            <button class="tab" data-tab="platos">
+              Nuestros platos en eventos
+            </button>
+          </div>
+          <div
+            class="event-gallery tab-panel active"
+            data-panel="celebraciones"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+          </div>
+          <div class="event-gallery tab-panel" data-panel="montajes">
+            <img
+              src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+          </div>
+          <div class="event-gallery tab-panel" data-panel="platos">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=85"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="section-title compact">
+            <div>
+              <p class="eyebrow dark">Experiencias reales</p>
+              <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+          </div>
+          <div class="testimonial">
+            <button id="prevTestimonial">‹</button>
+            <blockquote id="testimonialText">
+              “La comida deliciosa y la atención excelente. Hicieron de nuestro
+              matrimonio un día inolvidable.”
+            </blockquote>
+            <button id="nextTestimonial">›</button>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </section>
+
+      <section class="event-cta" id="contacto-eventos">
+        <div class="container cta-grid">
+          <div>
+            <p class="eyebrow">Hazlo realidad</p>
+            <h2>Cuéntanos sobre tu evento</h2>
+            <p>Te ayudamos a planearlo con una propuesta pensada para ti.</p>
+          </div>
+          <form id="eventForm">
+            <input required type="text" placeholder="Nombre" />
+            <input required type="tel" placeholder="Teléfono" />
+            <select required>
+              <option value="">Tipo de evento</option>
+              <option>Cumpleaños</option>
+              <option>Matrimonio</option>
+              <option>Corporativo</option>
+              <option>Reunión familiar</option>
+            </select>
+            <button class="btn btn-light" type="submit">
+              Solicita tu cotización →
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="brand footer-brand">
+          <span class="brand-icon">♨</span
+          ><span><strong>El Fogón</strong><small>de la Abuela</small></span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a><a href="#eventos">Eventos</a
+          ><a href="#paquetes">Paquetes</a><a href="#galeria-eventos">Galería</a
+          ><a href="index.html#nosotros">Nosotros</a
+          ><a href="#contacto-eventos">Contacto</a>
+        </div>
+        <div class="footer-note">Momentos con más sabor ♡</div>
+      </div>
+      <div class="copyright">
+        © 2026 El Fogón de la Abuela. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/51999999999"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp"
+      >✆</a
+    >
+
+    <div class="modal" id="packageModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-card package-modal-card">
+        <button class="modal-close" data-close-modal>×</button>
+        <div class="modal-body">
+          <p class="eyebrow dark">Detalle del paquete</p>
+          <h2 id="packageTitle">Paquete</h2>
+          <div class="accordion">
+            <details open>
+              <summary>¿Qué incluye?</summary>
+              <p>
+                Selección de fondos, entradas y postres, además de personal de
+                atención.
+              </p>
+            </details>
+            <details>
+              <summary>Opciones de platos</summary>
+              <p>
+                Lomo saltado, ají de gallina, arroz con pollo, seco de res,
+                tallarines verdes y más.
+              </p>
+            </details>
+            <details>
+              <summary>Condiciones</summary>
+              <p>
+                La reserva se confirma con adelanto. El precio final depende del
+                número de invitados y servicios adicionales.
+              </p>
+            </details>
+            <details>
+              <summary>Servicios adicionales</summary>
+              <p>
+                Decoración, menaje, bebidas, estación de postres y personal
+                extra.
+              </p>
+            </details>
+          </div>
+          <a class="btn btn-primary" href="#contacto-eventos">Quiero cotizar</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
