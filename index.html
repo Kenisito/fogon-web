@@ -1,91 +1,144 @@
+<!-- Página index.html: comentarios de estudio añadidos sin modificar elementos ni atributos. -->
+<!-- Declara que el documento utiliza HTML5. -->
 <!doctype html>
+<!-- Establece el idioma español para navegadores y lectores de pantalla. -->
 <html lang="es">
+  <!-- Contiene metadatos, título, fuentes y hojas de estilo; no es contenido visible. -->
   <head>
+    <!-- Permite representar tildes, eñes y otros caracteres Unicode. -->
     <meta charset="UTF-8" />
+    <!-- Adapta el ancho de la página a móviles y tabletas. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="El Fogón de la Abuela - comida criolla, delivery y eventos."
     />
+    <!-- Título que aparece en la pestaña del navegador. -->
     <title>El Fogón de la Abuela</title>
+    <!-- Adelanta la conexión al servidor de tipografías para reducir la espera. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Adelanta la conexión al servidor de tipografías para reducir la espera. -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Elemento individual de una lista. -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Carga las reglas CSS compartidas por ambas páginas. -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <!-- Empieza el contenido visible de la página. -->
   <body>
+    <!-- Cabecera compartida: logotipo, navegación y acceso destacado. -->
     <header class="site-header">
+      <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
       <div class="container nav-wrap">
+        <!-- El enlace del logotipo permite volver a la página principal. -->
         <a class="brand" href="index.html" aria-label="Ir al inicio">
+          <!-- Muestra el logotipo WebP; alt vacío porque el nombre se escribe al lado. -->
           <img class="brand-logo" src="assets/logo-fogon.webp" width="52" height="52" alt="" />
+          <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
           <span><strong>El Fogón</strong><small>de la Abuela</small></span>
         </a>
 
+        <!-- Botón del menú móvil; script.js lo controla mediante el identificador menuBtn. -->
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
           ☰
         </button>
 
+        <!-- Agrupa enlaces del menú; script.js añade o retira la clase open en móviles. -->
         <nav class="main-nav" id="mainNav">
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a class="active" href="#inicio">Inicio</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#carta">Carta</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#promociones">Promociones</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#delivery">Delivery</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="eventos.html">Eventos</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#nosotros">Nosotros</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#contacto">Contacto</a>
         </nav>
 
+        <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
         <a class="btn btn-outline nav-cta" href="#delivery">Haz tu pedido</a>
       </div>
     </header>
 
+    <!-- Contenido principal, separado semánticamente de cabecera y pie. -->
     <main>
+      <!-- Portada del restaurante con titular, imagen de fondo y botones. -->
       <section class="hero hero-home" id="inicio">
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="hero-overlay"></div>
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container hero-content">
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="eyebrow">Sabor criollo de verdad</p>
+          <!-- Título principal de la página, importante para jerarquía y accesibilidad. -->
           <h1>El sabor de casa,<br />siempre contigo</h1>
+          <!-- Párrafo de contenido descriptivo. -->
           <p>
             Comida criolla hecha con cariño, recetas tradicionales y ese toque
             que recuerda a casa.
           </p>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="hero-actions">
+            <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
             <a class="btn btn-primary" href="#carta">Ver nuestra carta</a>
+            <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
             <a class="btn btn-green" href="#delivery">Pide por delivery</a>
+            <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
             <a class="btn btn-light" href="#contacto">Visítanos</a>
           </div>
         </div>
+        <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
         <span class="hero-script">Sabor criollo<br />que une</span>
       </section>
 
+      <!-- Sección temática del contenido de la página. -->
       <section class="features">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container feature-grid">
+          <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
           <article>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>♨</span>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
               <strong>Comida criolla auténtica</strong
               ><small>Recetas de siempre</small>
             </div>
           </article>
+          <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
           <article>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>▣</span>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
               <strong>Delivery rápido y seguro</strong
               ><small>Hasta tu puerta</small>
             </div>
           </article>
+          <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
           <article>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>♡</span>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
               <strong>Ambiente familiar y acogedor</strong
               ><small>Para compartir</small>
             </div>
           </article>
+          <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
           <article>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>◇</span>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
               <strong>Calidad en cada plato</strong
               ><small>Ingredientes seleccionados</small>
@@ -94,243 +147,327 @@
         </div>
       </section>
 
+      <!-- Carta de alimentos y bebidas por categorías. -->
       <section class="section section-soft" id="menuCompleto">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Explora nuestros sabores</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Nuestra carta</h2>
             </div>
           </div>
 
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="tabs" data-tab-group="menu">
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab active" data-tab="fondos">Fondos</button>
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab" data-tab="entradas">Entradas</button>
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab" data-tab="postres">Postres</button>
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab" data-tab="bebidas">Bebidas</button>
           </div>
 
+          <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
           <div class="tab-panels">
+            <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
             <div class="tab-panel active" data-panel="fondos">
+              <!-- Contenedor de maquetación usado por las reglas CSS. -->
               <div class="menu-grid">
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Carapulcra"
                   data-modal-price="S/ 24.00"
                   data-modal-img="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Carapulcra</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 24.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Cau cau"
                   data-modal-price="S/ 22.00"
                   data-modal-img="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=85"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Cau cau</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 22.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Tacu tacu con bistec"
                   data-modal-price="S/ 26.00"
                   data-modal-img="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=85"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=700&q=85"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Tacu tacu con bistec</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 26.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Tallarines verdes"
                   data-modal-price="S/ 20.00"
                   data-modal-img="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=85"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Tallarines verdes</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 20.00</span>
                 </article>
               </div>
             </div>
+            <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
             <div class="tab-panel" data-panel="entradas">
+              <!-- Contenedor de maquetación usado por las reglas CSS. -->
               <div class="menu-grid">
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Anticucho con papa y choclo"
                   data-modal-price="S/ 24.00"
                   data-modal-img="https://images.pexels.com/photos/25856520/pexels-photo-25856520.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/25856520/pexels-photo-25856520.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Anticucho con papa y choclo</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 24.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Ceviche mixto"
                   data-modal-price="S/ 22.00"
                   data-modal-img="https://images.pexels.com/photos/29168410/pexels-photo-29168410.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/29168410/pexels-photo-29168410.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Ceviche mixto</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 22.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Causa Limeña"
                   data-modal-price="S/ 26.00"
                   data-modal-img="https://images.pexels.com/photos/22485343/pexels-photo-22485343.png"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/22485343/pexels-photo-22485343.png"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Causa Limeña</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 26.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Choritos a la chalaca"
                   data-modal-price="S/ 20.00"
                   data-modal-img="https://images.pexels.com/photos/16931506/pexels-photo-16931506.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/16931506/pexels-photo-16931506.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Choritos a la chalaca</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 20.00</span>
                 </article>
               </div>
             </div>
+            <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
             <div class="tab-panel" data-panel="postres">
+             <!-- Contenedor de maquetación usado por las reglas CSS. -->
              <div class="menu-grid">
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Picarones"
                   data-modal-price="S/ 24.00"
                   data-modal-img="https://images.pexels.com/photos/26950776/pexels-photo-26950776.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/26950776/pexels-photo-26950776.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Picarones</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 24.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Mazamorra morada"
                   data-modal-price="S/ 22.00"
                   data-modal-img="https://images.pexels.com/photos/37976948/pexels-photo-37976948.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/37976948/pexels-photo-37976948.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Mazamorra morada</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 22.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Arroz con leche"
                   data-modal-price="S/ 26.00"
                   data-modal-img="https://images.pexels.com/photos/37825038/pexels-photo-37825038.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/37825038/pexels-photo-37825038.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Arroz con leche</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 26.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Suspiro a la Limeña"
                   data-modal-price="S/ 20.00"
                   data-modal-img="https://images.pexels.com/photos/32255837/pexels-photo-32255837.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/32255837/pexels-photo-32255837.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Suspiro a la Limeña</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 20.00</span>
                 </article>
               </div>
             </div>
+            <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
             <div class="tab-panel" data-panel="bebidas">
+              <!-- Contenedor de maquetación usado por las reglas CSS. -->
               <div class="menu-grid">
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Chicha morada"
                   data-modal-price="S/ 24.00"
                   data-modal-img="https://images.pexels.com/photos/28490841/pexels-photo-28490841.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/28490841/pexels-photo-28490841.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Chicha morada</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 24.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Limonada"
                   data-modal-price="S/ 22.00"
                   data-modal-img="https://images.pexels.com/photos/4134388/pexels-photo-4134388.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/4134388/pexels-photo-4134388.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Limonada</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 22.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Chicha de jora"
                   data-modal-price="S/ 26.00"
                   data-modal-img="https://images.pexels.com/photos/12577057/pexels-photo-12577057.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/12577057/pexels-photo-12577057.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Chicha de jora</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 26.00</span>
                 </article>
+                <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
                 <article
                   class="mini-card"
                   data-modal-title="Batido de fresa"
                   data-modal-price="S/ 20.00"
                   data-modal-img="https://images.pexels.com/photos/10066812/pexels-photo-10066812.jpeg"
                 >
+                  <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
                   <img
                     src="https://images.pexels.com/photos/10066812/pexels-photo-10066812.jpeg"
                     alt=""
                   />
+                  <!-- Subtítulo de una tarjeta o subsección. -->
                   <h3>Batido de fresa</h3>
+                  <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
                   <span>S/ 20.00</span>
                 </article>
               </div>
@@ -339,49 +476,78 @@
         </div>
       </section>
 
+      <!-- Ofertas y promociones comerciales. -->
       <section class="section" id="promociones">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Más sabor, más momentos</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Promociones</h2>
             </div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="promo-grid">
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article class="promo-card green">
               <small>Menú del día</small>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>S/ 18.90</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Incluye entrada + fondo + bebida</p>
+              <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
               <button class="btn btn-light small">Ver más</button>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article class="promo-card brown">
               <small>Combo familiar</small>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>S/ 79.00</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Para 4 personas</p>
+              <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
               <button class="btn btn-light small">Ver más</button>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article class="promo-card green">
               <small>Promo Delivery</small>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>-20%</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>En plato seleccionado</p>
+              <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
               <button class="btn btn-light small">Ver más</button>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- Instrucciones y accesos para pedir a domicilio. -->
       <section class="delivery" id="delivery">
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="delivery-image"></div>
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="delivery-copy">
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="eyebrow dark">Tu comida favorita, donde estés</p>
+          <!-- Título de una sección del contenido. -->
           <h2>Pide desde casa</h2>
+          <!-- Párrafo de contenido descriptivo. -->
           <p>
             Haz tu pedido por tu canal favorito y disfruta el sabor del Fogón
             sin salir de casa.
           </p>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="delivery-badges">
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>WhatsApp</span>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>Rappi</span>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span>PedidosYa</span>
           </div>
           <a
@@ -394,60 +560,95 @@
         </div>
       </section>
 
+      <!-- Galería fotográfica filtrable del restaurante. -->
       <section class="section section-soft gallery-section" id="galeria">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="gallery-heading">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Conoce nuestro espacio</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Momentos que se saborean</h2>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Descubre nuestros platos, el ambiente y los recuerdos que compartimos.</p>
             </div>
+            <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
             <span class="gallery-count" id="galleryCount">40 fotografías</span>
           </div>
+          <!-- Grupo de filtros accesibles para elegir una categoría de fotos. -->
           <div class="gallery-filters" role="group" aria-label="Filtrar fotografías">
+            <!-- Filtro: data-gallery-filter indica a JavaScript qué categoría mostrar. -->
             <button type="button" class="gallery-filter active" data-gallery-filter="all" aria-pressed="true">Todas</button>
+            <!-- Filtro: data-gallery-filter indica a JavaScript qué categoría mostrar. -->
             <button type="button" class="gallery-filter" data-gallery-filter="platos" aria-pressed="false">Platos</button>
+            <!-- Filtro: data-gallery-filter indica a JavaScript qué categoría mostrar. -->
             <button type="button" class="gallery-filter" data-gallery-filter="ambiente" aria-pressed="false">Ambiente</button>
+            <!-- Filtro: data-gallery-filter indica a JavaScript qué categoría mostrar. -->
             <button type="button" class="gallery-filter" data-gallery-filter="eventos" aria-pressed="false">Eventos</button>
+            <!-- Filtro: data-gallery-filter indica a JavaScript qué categoría mostrar. -->
             <button type="button" class="gallery-filter" data-gallery-filter="cocina" aria-pressed="false">Cocina</button>
           </div>
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="gallery-scroll-hint">Desliza dentro de la galería para explorar las 40 fotografías ↓</p>
+          <!-- Área desplazable de fotos; tabindex permite recorrerla usando el teclado. -->
           <div class="gallery-scroll-region" tabindex="0" role="region" aria-label="Galería de fotografías con desplazamiento vertical">
+            <!-- Contenedor vacío que script.js rellena dinámicamente con fotografías. -->
             <div class="gallery-grid" id="galleryGrid"></div>
           </div>
         </div>
       </section>
 
+      <!-- Visor superpuesto para ampliar y recorrer imágenes. -->
       <div class="gallery-lightbox" id="galleryLightbox" hidden role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+        <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
         <button type="button" class="gallery-lightbox-close" id="galleryClose" aria-label="Cerrar fotografía">×</button>
+        <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
         <button type="button" class="gallery-lightbox-nav" id="galleryPrevious" aria-label="Fotografía anterior">‹</button>
         <figure class="gallery-lightbox-figure">
+          <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
           <img id="galleryLargeImage" alt="" />
           <figcaption id="galleryCaption"></figcaption>
         </figure>
+        <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
         <button type="button" class="gallery-lightbox-nav" id="galleryNext" aria-label="Siguiente fotografía">›</button>
       </div>
 
+      <!-- Presentación de los valores e historia del restaurante. -->
       <section class="about" id="nosotros">
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="about-image"></div>
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="about-copy">
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="eyebrow dark">Nuestra esencia</p>
+          <!-- Título de una sección del contenido. -->
           <h2>La tradición vive en cada plato</h2>
+          <!-- Párrafo de contenido descriptivo. -->
           <p>
             Compartimos lo mejor de la comida criolla con recetas de familia,
             ingredientes frescos y el mismo cariño de siempre.
           </p>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a class="btn btn-primary" href="#contacto"
             >Conoce nuestra historia</a
           >
         </div>
       </section>
 
+      <!-- Información para visitar o contactar al restaurante. -->
       <section class="visit" id="contacto">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container visit-grid">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div>
+            <!-- Párrafo de contenido descriptivo. -->
             <p class="eyebrow dark">Te esperamos</p>
+            <!-- Título de una sección del contenido. -->
             <h2>Visítanos</h2>
+            <!-- Párrafo de contenido descriptivo. -->
             <p>📍 Av. Principal 123, Surco, Lima</p>
             <a
               class="text-link"
@@ -457,12 +658,17 @@
               >Ver en Google Maps</a
             >
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="map-placeholder">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div class="pin">📍</div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div>
             <strong>Horarios de atención</strong>
+            <!-- Párrafo de contenido descriptivo. -->
             <p>Lun - Dom: 11:00 a.m. - 10:00 p.m.</p>
+            <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
             <a class="btn btn-outline-dark" href="eventos.html"
               >¿Tienes un evento?</a
             >
@@ -471,19 +677,27 @@
       </section>
     </main>
 
+    <!-- Pie de página: enlaces, datos del negocio y avisos finales. -->
     <footer class="footer">
+      <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
       <div class="container footer-grid">
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="brand footer-brand">
+          <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
           <span class="brand-icon">♨</span
           ><span><strong>El Fogón</strong><small>de la Abuela</small></span>
         </div>
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="footer-links">
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#inicio">Inicio</a><a href="#carta">Carta</a
           ><a href="#promociones">Promociones</a><a href="#delivery">Delivery</a
           ><a href="eventos.html">Eventos</a><a href="#contacto">Contacto</a>
         </div>
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="footer-note">Sabor criollo para cada ocasión ♡</div>
       </div>
+      <!-- Contenedor de maquetación usado por las reglas CSS. -->
       <div class="copyright">
         © 2026 El Fogón de la Abuela. Todos los derechos reservados.
       </div>
@@ -498,18 +712,28 @@
       >✆</a
     >
 
+    <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
     <div class="modal" id="dishModal" aria-hidden="true">
+      <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
       <div class="modal-backdrop" data-close-modal></div>
+      <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
       <div class="modal-card">
+        <!-- Control para cerrar un modal mediante JavaScript. -->
         <button class="modal-close" data-close-modal>×</button>
+        <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
         <img id="modalImg" alt="" />
+        <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
         <div class="modal-body">
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="eyebrow dark">Plato seleccionado</p>
+          <!-- Título de una sección del contenido. -->
           <h2 id="modalTitle">Plato</h2>
+          <!-- Párrafo de contenido descriptivo. -->
           <p>
             Una receta criolla preparada con ingredientes seleccionados y el
             sabor de casa.
           </p>
+          <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
           <div class="modal-bottom">
             <strong id="modalPrice">S/ 0.00</strong
             ><button class="btn btn-primary">Agregar al pedido</button>
@@ -518,6 +742,7 @@
       </div>
     </div>
 
+    <!-- Carga el JavaScript que activa navegación, carruseles, filtros y modales. -->
     <script src="script.js"></script>
   </body>
 </html>
