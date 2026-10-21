@@ -1,94 +1,144 @@
+<!-- Página eventos.html: comentarios de estudio añadidos sin modificar elementos ni atributos. -->
+<!-- Declara que el documento utiliza HTML5. -->
 <!doctype html>
+<!-- Establece el idioma español para navegadores y lectores de pantalla. -->
 <html lang="es">
+  <!-- Contiene metadatos, título, fuentes y hojas de estilo; no es contenido visible. -->
   <head>
+    <!-- Permite representar tildes, eñes y otros caracteres Unicode. -->
     <meta charset="UTF-8" />
+    <!-- Adapta el ancho de la página a móviles y tabletas. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Eventos y catering - El Fogón de la Abuela."
     />
+    <!-- Título que aparece en la pestaña del navegador. -->
     <title>Eventos | El Fogón de la Abuela</title>
+    <!-- Adelanta la conexión al servidor de tipografías para reducir la espera. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Adelanta la conexión al servidor de tipografías para reducir la espera. -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Elemento individual de una lista. -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Carga las reglas CSS compartidas por ambas páginas. -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <!-- Empieza el contenido visible de la página. -->
   <body>
+    <!-- Cabecera compartida: logotipo, navegación y acceso destacado. -->
     <header class="site-header">
+      <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
       <div class="container nav-wrap">
+        <!-- El enlace del logotipo permite volver a la página principal. -->
         <a class="brand" href="index.html"
+          <!-- Muestra el logotipo WebP; alt vacío porque el nombre se escribe al lado. -->
           ><img class="brand-logo" src="assets/logo-fogon.webp" width="52" height="52" alt="" />
           ><span><strong>El Fogón</strong><small>de la Abuela</small></span></a
         >
+        <!-- Botón del menú móvil; script.js lo controla mediante el identificador menuBtn. -->
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
           ☰
         </button>
+        <!-- Agrupa enlaces del menú; script.js añade o retira la clase open en móviles. -->
         <nav class="main-nav" id="mainNav">
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="index.html">Inicio</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a class="active" href="#eventos">Eventos</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#paquetes">Paquetes</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#galeria-eventos">Galería</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="index.html#nosotros">Nosotros</a>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="#contacto-eventos">Contacto</a>
         </nav>
+        <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
         <a class="btn btn-outline nav-cta" href="#contacto-eventos"
           >Cotiza tu evento</a
         >
       </div>
     </header>
 
+    <!-- Contenido principal, separado semánticamente de cabecera y pie. -->
     <main>
+      <!-- Portada de la página de eventos y catering. -->
       <section class="hero hero-events" id="eventos">
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="hero-overlay"></div>
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container hero-content">
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="eyebrow">Catering & celebraciones</p>
+          <!-- Título principal de la página, importante para jerarquía y accesibilidad. -->
           <h1>Hacemos especiales<br />tus momentos más importantes</h1>
+          <!-- Párrafo de contenido descriptivo. -->
           <p>
             Buffet criollo para todo tipo de eventos, con atención personalizada
             de principio a fin.
           </p>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a class="btn btn-primary" href="#contacto-eventos"
             >Cotiza tu evento →</a
           >
         </div>
+        <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
         <span class="hero-script">Buena comida,<br />grandes historias</span>
       </section>
 
+      <!-- Sección temática del contenido de la página. -->
       <section class="section">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="center-title">
+            <!-- Párrafo de contenido descriptivo. -->
             <p class="eyebrow dark">Nos adaptamos a cada ocasión</p>
+            <!-- Título de una sección del contenido. -->
             <h2>Tipos de eventos</h2>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="event-types">
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
               <img
                 src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=85"
                 alt=""
               /><span>Cumpleaños</span>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
               <img
                 src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=85"
                 alt=""
               /><span>Bautizos</span>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
               <img
                 src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=85"
                 alt=""
               /><span>Matrimonios</span>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
               <img
                 src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=85"
                 alt=""
               /><span>Eventos corporativos</span>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
               <img
                 src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=700&q=85"
                 alt=""
@@ -98,72 +148,121 @@
         </div>
       </section>
 
+      <!-- Sección con fondo alternativo para diferenciar el contenido. -->
       <section class="section section-soft">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Todo lo que necesitas</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Nuestros servicios</h2>
             </div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="service-grid">
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>♨</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Buffet criollo personalizado</h3>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>✦</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Montaje y decoración básica</h3>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>☷</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Personal de atención</h3>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>♜</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Alquiler de menaje</h3>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>♡</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Asesoría en todo el proceso</h3>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- Paquetes de servicio para celebraciones. -->
       <section class="section" id="paquetes">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Opciones para cada necesidad</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Paquetes de eventos</h2>
             </div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="pricing-grid">
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article class="price-card">
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Paquete Básico</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Desde <strong>S/ 35</strong> por persona</p>
+              <!-- Lista semántica de elementos relacionados. -->
               <ul>
+                <!-- Elemento individual de una lista. -->
                 <li>3 fondos a elegir</li>
+                <!-- Elemento individual de una lista. -->
                 <li>1 entrada</li>
+                <!-- Elemento individual de una lista. -->
                 <li>1 postre</li>
+                <!-- Elemento individual de una lista. -->
                 <li>Personal de atención</li>
               </ul>
+              <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
               <button class="btn btn-primary details-btn" data-package="Básico">
                 Ver detalle
               </button>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article class="price-card featured">
+              <!-- Contenedor de maquetación usado por las reglas CSS. -->
               <div class="badge">Más solicitado</div>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Paquete Familiar</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Desde <strong>S/ 45</strong> por persona</p>
+              <!-- Lista semántica de elementos relacionados. -->
               <ul>
+                <!-- Elemento individual de una lista. -->
                 <li>4 fondos a elegir</li>
+                <!-- Elemento individual de una lista. -->
                 <li>2 entradas</li>
+                <!-- Elemento individual de una lista. -->
                 <li>2 postres</li>
+                <!-- Elemento individual de una lista. -->
                 <li>Personal de atención</li>
+                <!-- Elemento individual de una lista. -->
                 <li>Montaje básico</li>
               </ul>
+              <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
               <button
                 class="btn btn-primary details-btn"
                 data-package="Familiar"
@@ -171,17 +270,28 @@
                 Ver detalle
               </button>
             </article>
+            <!-- Elemento independiente, como una tarjeta de plato, promoción o servicio. -->
             <article class="price-card">
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Paquete Premium</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Desde <strong>S/ 60</strong> por persona</p>
+              <!-- Lista semántica de elementos relacionados. -->
               <ul>
+                <!-- Elemento individual de una lista. -->
                 <li>5 fondos a elegir</li>
+                <!-- Elemento individual de una lista. -->
                 <li>3 entradas</li>
+                <!-- Elemento individual de una lista. -->
                 <li>3 postres</li>
+                <!-- Elemento individual de una lista. -->
                 <li>Personal de atención</li>
+                <!-- Elemento individual de una lista. -->
                 <li>Montaje y decoración</li>
+                <!-- Elemento individual de una lista. -->
                 <li>Opciones adicionales</li>
               </ul>
+              <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
               <button
                 class="btn btn-primary details-btn"
                 data-package="Premium"
@@ -193,108 +303,156 @@
         </div>
       </section>
 
+      <!-- Sección con fondo alternativo para diferenciar el contenido. -->
       <section class="section section-soft">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Un proceso simple</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Cómo trabajamos</h2>
             </div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="steps">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>1</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Cuéntanos</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Sobre tu evento</p>
             </div>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>2</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Cotizamos</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Te enviamos una propuesta</p>
             </div>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>3</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Reserva</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Asegura tu fecha</p>
             </div>
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
               <span>4</span>
+              <!-- Subtítulo de una tarjeta o subsección. -->
               <h3>Disfruta</h3>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>Nos encargamos del resto</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Galería de ejemplos de eventos. -->
       <section class="section" id="galeria-eventos">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Momentos que inspiran</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Galería de eventos</h2>
             </div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="tabs" data-tab-group="events">
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab active" data-tab="celebraciones">
               Celebraciones
             </button>
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab" data-tab="montajes">Montajes</button>
+            <!-- Pestaña interactiva; JavaScript utiliza su atributo data-tab. -->
             <button class="tab" data-tab="platos">
               Nuestros platos en eventos
             </button>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div
             class="event-gallery tab-panel active"
             data-panel="celebraciones"
           >
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
           </div>
+          <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
           <div class="event-gallery tab-panel" data-panel="montajes">
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1507501336603-6e31db2be093?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
           </div>
+          <!-- Panel asociado a una pestaña; la clase active define cuál se ve. -->
           <div class="event-gallery tab-panel" data-panel="platos">
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85"
               alt=""
             />
+            <!-- Inserta una imagen; src es la ruta y alt ofrece una descripción accesible. -->
             <img
               src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=85"
               alt=""
@@ -303,36 +461,56 @@
         </div>
       </section>
 
+      <!-- Carrusel de opiniones de clientes. -->
       <section class="testimonial-section">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="section-title compact">
+            <!-- Contenedor de maquetación usado por las reglas CSS. -->
             <div>
+              <!-- Párrafo de contenido descriptivo. -->
               <p class="eyebrow dark">Experiencias reales</p>
+              <!-- Título de una sección del contenido. -->
               <h2>Lo que dicen nuestros clientes</h2>
             </div>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="testimonial">
+            <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
             <button id="prevTestimonial">‹</button>
             <blockquote id="testimonialText">
               “La comida deliciosa y la atención excelente. Hicieron de nuestro
               matrimonio un día inolvidable.”
             </blockquote>
+            <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
             <button id="nextTestimonial">›</button>
           </div>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="stars">★★★★★</div>
         </div>
       </section>
 
+      <!-- Formulario para solicitar una cotización. -->
       <section class="event-cta" id="contacto-eventos">
+        <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
         <div class="container cta-grid">
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div>
+            <!-- Párrafo de contenido descriptivo. -->
             <p class="eyebrow">Hazlo realidad</p>
+            <!-- Título de una sección del contenido. -->
             <h2>Cuéntanos sobre tu evento</h2>
+            <!-- Párrafo de contenido descriptivo. -->
             <p>Te ayudamos a planearlo con una propuesta pensada para ti.</p>
           </div>
+          <!-- Formulario de captura de datos; su envío se maneja en script.js. -->
           <form id="eventForm">
+            <!-- Campo de entrada; name identifica el dato y required puede exigir completarlo. -->
             <input required type="text" placeholder="Nombre" />
+            <!-- Campo de entrada; name identifica el dato y required puede exigir completarlo. -->
             <input required type="tel" placeholder="Teléfono" />
+            <!-- Lista desplegable de opciones para el formulario. -->
             <select required>
               <option value="">Tipo de evento</option>
               <option>Cumpleaños</option>
@@ -340,6 +518,7 @@
               <option>Corporativo</option>
               <option>Reunión familiar</option>
             </select>
+            <!-- Botón interactivo; las clases/atributos determinan su apariencia o acción. -->
             <button class="btn btn-light" type="submit">
               Solicita tu cotización →
             </button>
@@ -348,20 +527,28 @@
       </section>
     </main>
 
+    <!-- Pie de página: enlaces, datos del negocio y avisos finales. -->
     <footer class="footer">
+      <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
       <div class="container footer-grid">
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="brand footer-brand">
+          <!-- Elemento de texto en línea que permite aplicar estilos específicos. -->
           <span class="brand-icon">♨</span
           ><span><strong>El Fogón</strong><small>de la Abuela</small></span>
         </div>
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="footer-links">
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a href="index.html">Inicio</a><a href="#eventos">Eventos</a
           ><a href="#paquetes">Paquetes</a><a href="#galeria-eventos">Galería</a
           ><a href="index.html#nosotros">Nosotros</a
           ><a href="#contacto-eventos">Contacto</a>
         </div>
+        <!-- Contenedor de maquetación usado por las reglas CSS. -->
         <div class="footer-note">Momentos con más sabor ♡</div>
       </div>
+      <!-- Contenedor de maquetación usado por las reglas CSS. -->
       <div class="copyright">
         © 2026 El Fogón de la Abuela. Todos los derechos reservados.
       </div>
@@ -376,16 +563,25 @@
       >✆</a
     >
 
+    <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
     <div class="modal" id="packageModal" aria-hidden="true">
+      <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
       <div class="modal-backdrop" data-close-modal></div>
+      <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
       <div class="modal-card package-modal-card">
+        <!-- Control para cerrar un modal mediante JavaScript. -->
         <button class="modal-close" data-close-modal>×</button>
+        <!-- Estructura de ventana modal; CSS y JavaScript controlan su visibilidad. -->
         <div class="modal-body">
+          <!-- Párrafo de contenido descriptivo. -->
           <p class="eyebrow dark">Detalle del paquete</p>
+          <!-- Título de una sección del contenido. -->
           <h2 id="packageTitle">Paquete</h2>
+          <!-- Contenedor de maquetación usado por las reglas CSS. -->
           <div class="accordion">
             <details open>
               <summary>¿Qué incluye?</summary>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>
                 Selección de fondos, entradas y postres, además de personal de
                 atención.
@@ -393,6 +589,7 @@
             </details>
             <details>
               <summary>Opciones de platos</summary>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>
                 Lomo saltado, ají de gallina, arroz con pollo, seco de res,
                 tallarines verdes y más.
@@ -400,6 +597,7 @@
             </details>
             <details>
               <summary>Condiciones</summary>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>
                 La reserva se confirma con adelanto. El precio final depende del
                 número de invitados y servicios adicionales.
@@ -407,17 +605,20 @@
             </details>
             <details>
               <summary>Servicios adicionales</summary>
+              <!-- Párrafo de contenido descriptivo. -->
               <p>
                 Decoración, menaje, bebidas, estación de postres y personal
                 extra.
               </p>
             </details>
           </div>
+          <!-- Enlace navegable: href indica una sección (#...), otra página o destino externo. -->
           <a class="btn btn-primary" href="#contacto-eventos">Quiero cotizar</a>
         </div>
       </div>
     </div>
 
+    <!-- Carga el JavaScript que activa navegación, carruseles, filtros y modales. -->
     <script src="script.js"></script>
   </body>
 </html>
