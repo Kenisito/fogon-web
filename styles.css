@@ -996,3 +996,108 @@ select {
     grid-column: auto;
   }
 }
+
+
+/* Featured dishes: responsive, snap-aligned cards and unobstructed controls. */
+#featuredCarousel {
+  grid-auto-columns: calc((100% - 54px) / 4);
+  gap: 18px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
+  overscroll-behavior-x: contain;
+  padding-bottom: 3px;
+}
+#featuredCarousel .food-card {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  border-radius: 14px;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+#featuredCarousel .food-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(47, 28, 19, .1);
+}
+#featuredCarousel .food-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+#featuredCarousel .food-card > div {
+  flex: 1;
+  padding: 17px 18px 19px;
+}
+#featuredCarousel .food-card h3 {
+  font-size: 19px;
+  line-height: 1.35;
+}
+#carta .carousel-shell {
+  padding-bottom: 58px;
+}
+#carta .carousel-arrow {
+  top: auto;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  font-size: 27px;
+  box-shadow: none;
+  transition: background .2s ease, opacity .2s ease;
+}
+#carta .carousel-arrow.prev {
+  left: auto;
+  right: 52px;
+}
+#carta .carousel-arrow.next {
+  right: 0;
+}
+#carta .carousel-arrow:hover:not(:disabled) {
+  background: var(--wine);
+}
+#carta .carousel-arrow:focus-visible {
+  outline: 3px solid var(--wine);
+  outline-offset: 3px;
+}
+#carta .carousel-arrow:disabled {
+  opacity: .3;
+  cursor: default;
+}
+@media (max-width: 1050px) {
+  #featuredCarousel {
+    grid-auto-columns: calc((100% - 36px) / 3);
+  }
+}
+@media (max-width: 760px) {
+  #featuredCarousel {
+    grid-auto-columns: calc((100% - 18px) / 2);
+  }
+  #featuredCarousel .food-card img {
+    height: 175px;
+  }
+}
+@media (max-width: 520px) {
+  #featuredCarousel {
+    grid-auto-columns: 100%;
+  }
+  #featuredCarousel .food-card img {
+    height: 210px;
+  }
+  #carta .section-title {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #featuredCarousel {
+    scroll-behavior: auto;
+  }
+  #featuredCarousel .food-card {
+    transition: none;
+  }
+}
