@@ -34,11 +34,11 @@
       <!-- Limita el ancho del bloque y mantiene márgenes consistentes. -->
       <div class="container nav-wrap">
         <!-- El enlace del logotipo permite volver a la página principal. -->
-        <a class="brand" href="index.html"
+        <a class="brand" href="index.html">
           <!-- Muestra el logotipo WebP; alt vacío porque el nombre se escribe al lado. -->
-          ><img class="brand-logo" src="assets/logo-fogon.webp" width="52" height="52" alt="" />
-          ><span><strong>El Fogón</strong><small>de la Abuela</small></span></a
-        >
+          <img class="brand-logo" src="assets/logo-fogon.webp" width="52" height="52" alt="" />
+          <span><strong>El Fogón</strong><small>de la Abuela</small></span>
+        </a>
         <!-- Botón del menú móvil; script.js lo controla mediante el identificador menuBtn. -->
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
           ☰
@@ -507,11 +507,11 @@
           <!-- Formulario de captura de datos; su envío se maneja en script.js. -->
           <form id="eventForm">
             <!-- Campo de entrada; name identifica el dato y required puede exigir completarlo. -->
-            <input required type="text" placeholder="Nombre" />
+            <input required type="text" name="nombre" aria-label="Nombre" autocomplete="name" placeholder="Nombre" />
             <!-- Campo de entrada; name identifica el dato y required puede exigir completarlo. -->
-            <input required type="tel" placeholder="Teléfono" />
+            <input required type="tel" name="telefono" aria-label="Teléfono" autocomplete="tel" placeholder="Teléfono" />
             <!-- Lista desplegable de opciones para el formulario. -->
-            <select required>
+            <select required name="tipoEvento" aria-label="Tipo de evento">
               <option value="">Tipo de evento</option>
               <option>Cumpleaños</option>
               <option>Matrimonio</option>
