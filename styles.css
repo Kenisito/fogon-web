@@ -1141,3 +1141,7 @@ select {
 .gallery-scroll-region::-webkit-scrollbar-thumb { background:#a76c55; border-radius:12px; border:2px solid #ebddd0; }
 .gallery-scroll-region:focus-visible { outline:2px solid var(--wine); outline-offset:3px; }
 @media(max-width:650px) { .gallery-scroll-region { max-height:min(580px,68vh); padding-right:7px; } }
+
+/* Logo del restaurante: imagen circular transparente en ambas cabeceras. */
+.brand-logo { display:block; width:52px; height:52px; object-fit:contain; flex-shrink:0; }
+@media (max-width:620px) { .brand-logo { width:43px; height:43px; } }
