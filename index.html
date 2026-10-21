@@ -476,38 +476,35 @@
         </div>
       </section>
 
-      <section class="section section-soft" id="galeria">
+      <section class="section section-soft gallery-section" id="galeria">
         <div class="container">
-          <div class="section-title compact">
+          <div class="gallery-heading">
             <div>
               <p class="eyebrow dark">Conoce nuestro espacio</p>
-              <h2>Galería</h2>
+              <h2>Momentos que se saborean</h2>
+              <p>Descubre nuestros platos, el ambiente y los recuerdos que compartimos.</p>
             </div>
+            <span class="gallery-count" id="galleryCount">40 fotografías</span>
           </div>
-          <div class="gallery">
-            <img
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85"
-              alt="Plato"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85"
-              alt="Restaurante"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=85"
-              alt="Mesa"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85"
-              alt="Comida"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85"
-              alt="Interior"
-            />
+          <div class="gallery-filters" role="group" aria-label="Filtrar fotografías">
+            <button type="button" class="gallery-filter active" data-gallery-filter="all" aria-pressed="true">Todas</button>
+            <button type="button" class="gallery-filter" data-gallery-filter="platos" aria-pressed="false">Platos</button>
+            <button type="button" class="gallery-filter" data-gallery-filter="ambiente" aria-pressed="false">Ambiente</button>
+            <button type="button" class="gallery-filter" data-gallery-filter="eventos" aria-pressed="false">Eventos</button>
+            <button type="button" class="gallery-filter" data-gallery-filter="cocina" aria-pressed="false">Cocina</button>
           </div>
+          <div class="gallery-grid" id="galleryGrid"></div>
         </div>
       </section>
+      <div class="gallery-lightbox" id="galleryLightbox" hidden role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+        <button type="button" class="gallery-lightbox-close" id="galleryClose" aria-label="Cerrar fotografía">×</button>
+        <button type="button" class="gallery-lightbox-nav" id="galleryPrevious" aria-label="Fotografía anterior">‹</button>
+        <figure class="gallery-lightbox-figure">
+          <img id="galleryLargeImage" alt="" />
+          <figcaption id="galleryCaption"></figcaption>
+        </figure>
+        <button type="button" class="gallery-lightbox-nav" id="galleryNext" aria-label="Siguiente fotografía">›</button>
+      </div>
 
       <section class="about" id="nosotros">
         <div class="about-image"></div>
