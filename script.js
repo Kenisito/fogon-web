@@ -11,16 +11,41 @@ document.addEventListener("DOMContentLoaded", () => {
       );
   }
 
-  document.querySelectorAll(".carousel-arrow").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const target = document.getElementById(btn.dataset.target);
-      if (!target) return;
-      const amount = Math.max(250, target.clientWidth * 0.75);
-      target.scrollBy({
-        left: btn.classList.contains("next") ? amount : -amount,
-        behavior: "smooth",
+  document.querySelectorAll(".carousel-shell").forEach((shell) => {
+    const track = shell.querySelector(".scrollable");
+    const prev = shell.querySelector(".carousel-arrow.prev");
+    const next = shell.querySelector(".carousel-arrow.next");
+    if (!track || !prev || !next) return;
+
+    const updateControls = () => {
+      const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft >= maxScroll - 2;
+    };
+
+    const move = (direction) => {
+      const cards = Array.from(track.children);
+      if (!cards.length) return;
+      const current = track.scrollLeft;
+      const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+      const positions = cards.map((card) => card.offsetLeft - cards[0].offsetLeft);
+      const destination = direction > 0
+        ? positions.find((position) => position > current + 2) ?? maxScroll
+        : positions.filter((position) => position < current - 2).pop() ?? 0;
+
+      track.scrollTo({
+        left: Math.min(maxScroll, Math.max(0, destination)),
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
       });
-    });
+    };
+
+    prev.addEventListener("click", () => move(-1));
+    next.addEventListener("click", () => move(1));
+    track.addEventListener("scroll", updateControls, { passive: true });
+    window.addEventListener("resize", updateControls);
+    updateControls();
   });
 
   document.querySelectorAll("[data-tab-group]").forEach((group) => {
