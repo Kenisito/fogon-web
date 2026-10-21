@@ -44,9 +44,12 @@ select {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(90deg, #3d160f, #2f0f0b);
+  margin-bottom: -74px;
+  background: rgba(38, 16, 12, 0.62);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 .nav-wrap {
   min-height: 74px;
@@ -1145,3 +1148,7 @@ select {
 /* Logo del restaurante: imagen circular transparente en ambas cabeceras. */
 .brand-logo { display:block; width:52px; height:52px; object-fit:contain; flex-shrink:0; }
 @media (max-width:620px) { .brand-logo { width:43px; height:43px; } }
+
+/* La cabecera de cristal se superpone a la portada, sin tapar su contenido. */
+.hero-home, .hero-events { padding-top: 74px; }
+@supports not ((backdrop-filter: blur(1px))) { .site-header { background: rgba(38,16,12,.85); } }
