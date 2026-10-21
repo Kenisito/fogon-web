@@ -1,174 +1,205 @@
+/* Hoja de estilos explicada para estudiar HTML/CSS. Se mantienen todas las declaraciones originales. */
+/* Variables globales del tema, reutilizadas con var(--nombre). */
 :root {
-  --wine: #861d1d;
-  --wine-dark: #5f1111;
-  --cream: #f7f1e8;
-  --paper: #fffdf9;
-  --ink: #241b17;
-  --muted: #6e625b;
-  --gold: #b98a4d;
-  --green: #1d6b3a;
-  --line: #e8ded3;
-  --shadow: 0 16px 42px rgba(70, 35, 20, 0.12);
+  --wine: #861d1d; /* Variable del tema que puede reutilizarse con var(). */
+  --wine-dark: #5f1111; /* Variable del tema que puede reutilizarse con var(). */
+  --cream: #f7f1e8; /* Variable del tema que puede reutilizarse con var(). */
+  --paper: #fffdf9; /* Variable del tema que puede reutilizarse con var(). */
+  --ink: #241b17; /* Variable del tema que puede reutilizarse con var(). */
+  --muted: #6e625b; /* Variable del tema que puede reutilizarse con var(). */
+  --gold: #b98a4d; /* Variable del tema que puede reutilizarse con var(). */
+  --green: #1d6b3a; /* Variable del tema que puede reutilizarse con var(). */
+  --line: #e8ded3; /* Variable del tema que puede reutilizarse con var(). */
+  --shadow: 0 16px 42px rgba(70, 35, 20, 0.12); /* Variable del tema que puede reutilizarse con var(). */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Incluye padding y bordes dentro del ancho y alto declarados. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Controla si el desplazamiento se anima suavemente. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 body {
-  margin: 0;
-  font-family: "DM Sans", system-ui, sans-serif;
-  color: var(--ink);
-  background: var(--paper);
-  line-height: 1.55;
+  margin: 0; /* Configura el margen exterior del elemento. */
+  font-family: "DM Sans", system-ui, sans-serif; /* Elige la tipografía usada. */
+  color: var(--ink); /* Define el color del texto o elemento. */
+  background: var(--paper); /* Define el fondo. */
+  line-height: 1.55; /* Controla el espacio entre líneas. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 img {
-  display: block;
-  width: 100%;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  width: 100%; /* Define el ancho del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Controla subrayado y otras decoraciones. */
+  color: inherit; /* Define el color del texto o elemento. */
 }
 button,
 input,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 select {
-  font: inherit;
+  font: inherit; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .container {
-  width: min(1180px, calc(100% - 38px));
-  margin: auto;
+  width: min(1180px, calc(100% - 38px)); /* Define el ancho del elemento. */
+  margin: auto; /* Configura el margen exterior del elemento. */
 }
+/* Estilos de la cabecera, logotipo y navegación. */
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  margin-bottom: -74px;
-  background: rgba(38, 16, 12, 0.62);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  position: sticky; /* Define cómo se posiciona respecto al documento o contenedor. */
+  top: 0; /* Indica la distancia al borde superior. */
+  z-index: 100; /* Define qué elemento se dibuja delante cuando se superponen. */
+  margin-bottom: -74px; /* Establece la separación inferior. */
+  background: rgba(38, 16, 12, 0.62); /* Define el fondo. */
+  -webkit-backdrop-filter: blur(14px); /* Versión compatible con motores WebKit del desenfoque. */
+  backdrop-filter: blur(14px); /* Desenfoca lo que queda detrás de la barra. */
+  color: #fff; /* Define el color del texto o elemento. */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Define el borde inferior. */
 }
+/* Estilos de la cabecera, logotipo y navegación. */
 .nav-wrap {
-  min-height: 74px;
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  min-height: 74px; /* Establece la altura mínima. */
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  gap: 24px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Estilos de la cabecera, logotipo y navegación. */
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-width: max-content;
-  color: #fff;
+  display: inline-flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  gap: 10px; /* Establece el espacio entre elementos de grid o flex. */
+  min-width: max-content; /* Establece el ancho mínimo permitido. */
+  color: #fff; /* Define el color del texto o elemento. */
 }
+/* Estilos de la cabecera, logotipo y navegación. */
 .brand-icon {
-  font-size: 29px;
-  color: #f7e8cf;
+  font-size: 29px; /* Define el tamaño de letra. */
+  color: #f7e8cf; /* Define el color del texto o elemento. */
 }
+/* Estilos de la cabecera, logotipo y navegación. */
 .brand strong {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: 21px;
-  line-height: 1;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-size: 21px; /* Define el tamaño de letra. */
+  line-height: 1; /* Controla el espacio entre líneas. */
 }
+/* Estilos de la cabecera, logotipo y navegación. */
 .brand small {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: 13px;
-  font-style: italic;
-  opacity: 0.9;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-size: 13px; /* Define el tamaño de letra. */
+  font-style: italic; /* Define la inclinación de la letra. */
+  opacity: 0.9; /* Controla la transparencia. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  flex: 1;
-  font-size: 14px;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  justify-content: center; /* Distribuye los elementos en el eje principal. */
+  gap: 24px; /* Establece el espacio entre elementos de grid o flex. */
+  flex: 1; /* Indica cómo crece o se encoge un elemento flexible. */
+  font-size: 14px; /* Define el tamaño de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .main-nav a {
-  padding: 26px 0 21px;
-  opacity: 0.82;
-  border-bottom: 3px solid transparent;
+  padding: 26px 0 21px; /* Configura el espacio interior. */
+  opacity: 0.82; /* Controla la transparencia. */
+  border-bottom: 3px solid transparent; /* Define el borde inferior. */
 }
 .main-nav a:hover,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .main-nav a.active {
-  opacity: 1;
-  border-color: #c09258;
+  opacity: 1; /* Controla la transparencia. */
+  border-color: #c09258; /* Establece el color del borde. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .menu-btn {
-  display: none;
-  background: none;
-  border: 0;
-  color: #fff;
-  font-size: 27px;
-  cursor: pointer;
+  display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  background: none; /* Define el fondo. */
+  border: 0; /* Define el borde del elemento. */
+  color: #fff; /* Define el color del texto o elemento. */
+  font-size: 27px; /* Define el tamaño de letra. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 12px 20px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.2s ease;
+  display: inline-flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  justify-content: center; /* Distribuye los elementos en el eje principal. */
+  border: 1px solid transparent; /* Define el borde del elemento. */
+  border-radius: 5px; /* Redondea las esquinas. */
+  padding: 12px 20px; /* Configura el espacio interior. */
+  font-weight: 700; /* Define el grosor de letra. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
+  transition: 0.2s ease; /* Anima cambios de propiedades de forma gradual. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.05);
+  transform: translateY(-1px); /* Mueve, escala o rota visualmente el elemento. */
+  filter: brightness(1.05); /* Aplica efectos gráficos. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn-primary {
-  background: var(--wine);
-  color: #fff;
-  border-color: #a04338;
+  background: var(--wine); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  border-color: #a04338; /* Establece el color del borde. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn-green {
-  background: var(--green);
-  color: #fff;
+  background: var(--green); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn-light {
-  background: #fff9ef;
-  color: #3b241a;
-  border-color: #ead5bd;
+  background: #fff9ef; /* Define el fondo. */
+  color: #3b241a; /* Define el color del texto o elemento. */
+  border-color: #ead5bd; /* Establece el color del borde. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn-outline {
-  color: #fff;
-  border-color: #d88375;
-  background: #8d2e27;
+  color: #fff; /* Define el color del texto o elemento. */
+  border-color: #d88375; /* Establece el color del borde. */
+  background: #8d2e27; /* Define el fondo. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn-outline-dark {
-  color: var(--wine);
-  border-color: var(--wine);
-  background: transparent;
+  color: var(--wine); /* Define el color del texto o elemento. */
+  border-color: var(--wine); /* Establece el color del borde. */
+  background: transparent; /* Define el fondo. */
 }
+/* Estilos de botones y sus variaciones. */
 .btn.small {
-  padding: 8px 14px;
-  font-size: 13px;
+  padding: 8px 14px; /* Configura el espacio interior. */
+  font-size: 13px; /* Define el tamaño de letra. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero {
-  position: relative;
-  min-height: 455px;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  overflow: hidden;
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
+  min-height: 455px; /* Establece la altura mínima. */
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo. */
+  background-position: center; /* Ubica la imagen de fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  overflow: hidden; /* Controla qué ocurre con el contenido que desborda. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-home {
-  background-image: url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=88");
+  background-image: url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=88"); /* Establece una imagen o degradado de fondo. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-events {
-  background-image: url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=88");
+  background-image: url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=88"); /* Establece una imagen o degradado de fondo. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-overlay {
-  position: absolute;
-  inset: 0;
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  inset: 0; /* Personaliza esta propiedad visual del elemento. */
   background: linear-gradient(
     90deg,
     rgba(30, 12, 7, 0.94) 0%,
@@ -176,343 +207,409 @@ select {
     rgba(24, 9, 5, 0.2) 78%
   );
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-content {
-  position: relative;
-  z-index: 2;
-  padding-block: 68px;
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
+  z-index: 2; /* Define qué elemento se dibuja delante cuando se superponen. */
+  padding-block: 68px; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .eyebrow {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-weight: 700;
-  color: #f0cf9b;
-  margin: 0 0 9px;
+  font-size: 12px; /* Define el tamaño de letra. */
+  text-transform: uppercase; /* Transforma visualmente mayúsculas o minúsculas. */
+  letter-spacing: 0.16em; /* Ajusta la separación entre letras. */
+  font-weight: 700; /* Define el grosor de letra. */
+  color: #f0cf9b; /* Define el color del texto o elemento. */
+  margin: 0 0 9px; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .eyebrow.dark {
-  color: #9b5b33;
+  color: #9b5b33; /* Define el color del texto o elemento. */
 }
 .hero h1,
 .section h2,
 .about h2,
 .delivery h2,
 .event-cta h2,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .visit h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero h1 {
-  font-size: clamp(40px, 5vw, 70px);
-  line-height: 0.95;
-  margin: 0 0 18px;
-  max-width: 690px;
+  font-size: clamp(40px, 5vw, 70px); /* Define el tamaño de letra. */
+  line-height: 0.95; /* Controla el espacio entre líneas. */
+  margin: 0 0 18px; /* Configura el margen exterior del elemento. */
+  max-width: 690px; /* Limita el ancho máximo. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-content > p:not(.eyebrow) {
-  max-width: 555px;
-  color: #f5ebe1;
-  font-size: 18px;
+  max-width: 555px; /* Limita el ancho máximo. */
+  color: #f5ebe1; /* Define el color del texto o elemento. */
+  font-size: 18px; /* Define el tamaño de letra. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 26px;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  gap: 10px; /* Establece el espacio entre elementos de grid o flex. */
+  flex-wrap: wrap; /* Permite o impide que los elementos flexibles salten de línea. */
+  margin-top: 26px; /* Establece la separación superior. */
 }
+/* Estilos de portada y su imagen de fondo. */
 .hero-script {
-  position: absolute;
-  right: 6%;
-  bottom: 48px;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-size: 25px;
-  transform: rotate(-5deg);
-  opacity: 0.82;
-  text-align: center;
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  right: 6%; /* Indica la distancia al borde derecho. */
+  bottom: 48px; /* Indica la distancia al borde inferior. */
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-style: italic; /* Define la inclinación de la letra. */
+  font-size: 25px; /* Define el tamaño de letra. */
+  transform: rotate(-5deg); /* Mueve, escala o rota visualmente el elemento. */
+  opacity: 0.82; /* Controla la transparencia. */
+  text-align: center; /* Alinea el texto. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .features {
-  background: #fff;
-  border-bottom: 1px solid var(--line);
+  background: #fff; /* Define el fondo. */
+  border-bottom: 1px solid var(--line); /* Define el borde inferior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 18px 0;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(4, 1fr); /* Define las columnas de la cuadrícula. */
+  padding: 18px 0; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid article {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 12px 20px;
-  border-right: 1px solid var(--line);
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  gap: 12px; /* Establece el espacio entre elementos de grid o flex. */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  padding: 12px 20px; /* Configura el espacio interior. */
+  border-right: 1px solid var(--line); /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid article:last-child {
-  border: 0;
+  border: 0; /* Define el borde del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid article > span {
-  font-size: 27px;
-  color: var(--wine);
+  font-size: 27px; /* Define el tamaño de letra. */
+  color: var(--wine); /* Define el color del texto o elemento. */
 }
 .feature-grid strong,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid small {
-  display: block;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid strong {
-  font-size: 13px;
+  font-size: 13px; /* Define el tamaño de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .feature-grid small {
-  font-size: 12px;
-  color: var(--muted);
+  font-size: 12px; /* Define el tamaño de letra. */
+  color: var(--muted); /* Define el color del texto o elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .section {
-  padding: 70px 0;
+  padding: 70px 0; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .section-soft {
-  background: var(--cream);
+  background: var(--cream); /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .section-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 30px;
-  margin-bottom: 24px;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  justify-content: space-between; /* Distribuye los elementos en el eje principal. */
+  align-items: end; /* Alinea los elementos en el eje transversal. */
+  gap: 30px; /* Establece el espacio entre elementos de grid o flex. */
+  margin-bottom: 24px; /* Establece la separación inferior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .section-title.compact {
-  align-items: center;
+  align-items: center; /* Alinea los elementos en el eje transversal. */
 }
 .section-title h2,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .center-title h2 {
-  font-size: 34px;
-  margin: 0 0 4px;
+  font-size: 34px; /* Define el tamaño de letra. */
+  margin: 0 0 4px; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .section-title p {
-  margin: 0;
-  color: var(--muted);
+  margin: 0; /* Configura el margen exterior del elemento. */
+  color: var(--muted); /* Define el color del texto o elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .text-link {
-  color: var(--wine);
-  font-weight: 700;
-  font-size: 14px;
+  color: var(--wine); /* Define el color del texto o elemento. */
+  font-weight: 700; /* Define el grosor de letra. */
+  font-size: 14px; /* Define el tamaño de letra. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 .carousel-shell {
-  position: relative;
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 .scrollable {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(230px, 1fr);
-  gap: 16px;
-  overflow: auto;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-auto-flow: column; /* Indica cómo se colocan los elementos automáticamente. */
+  grid-auto-columns: minmax(230px, 1fr); /* Define el ancho de las columnas creadas automáticamente. */
+  gap: 16px; /* Establece el espacio entre elementos de grid o flex. */
+  overflow: auto; /* Controla qué ocurre con el contenido que desborda. */
+  scrollbar-width: none; /* Controla el grosor de la barra de desplazamiento. */
+  scroll-behavior: smooth; /* Controla si el desplazamiento se anima suavemente. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 .scrollable::-webkit-scrollbar {
-  display: none;
+  display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 .carousel-arrow {
-  position: absolute;
-  z-index: 4;
-  top: 42%;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 0;
-  background: #1f1713;
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  box-shadow: var(--shadow);
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  z-index: 4; /* Define qué elemento se dibuja delante cuando se superponen. */
+  top: 42%; /* Indica la distancia al borde superior. */
+  width: 38px; /* Define el ancho del elemento. */
+  height: 38px; /* Define la altura del elemento. */
+  border-radius: 50%; /* Redondea las esquinas. */
+  border: 0; /* Define el borde del elemento. */
+  background: #1f1713; /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  font-size: 28px; /* Define el tamaño de letra. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
+  box-shadow: var(--shadow); /* Aplica una sombra exterior. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 .carousel-arrow.prev {
-  left: -18px;
+  left: -18px; /* Indica la distancia al borde izquierdo. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 .carousel-arrow.next {
-  right: -18px;
+  right: -18px; /* Indica la distancia al borde derecho. */
 }
 .food-card,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card {
-  background: #fff;
-  border: 1px solid var(--line);
-  overflow: hidden;
+  background: #fff; /* Define el fondo. */
+  border: 1px solid var(--line); /* Define el borde del elemento. */
+  overflow: hidden; /* Controla qué ocurre con el contenido que desborda. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .food-card {
-  border-radius: 8px;
-  min-width: 230px;
+  border-radius: 8px; /* Redondea las esquinas. */
+  min-width: 230px; /* Establece el ancho mínimo permitido. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .food-card img {
-  height: 165px;
-  object-fit: cover;
+  height: 165px; /* Define la altura del elemento. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .food-card div {
-  padding: 13px 14px;
+  padding: 13px 14px; /* Configura el espacio interior. */
 }
 .food-card h3,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card h3 {
-  margin: 0 0 5px;
-  font-family: "Playfair Display", serif;
+  margin: 0 0 5px; /* Configura el margen exterior del elemento. */
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
 }
 .food-card strong,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card span {
-  font-size: 13px;
+  font-size: 13px; /* Define el tamaño de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .tabs {
-  display: flex;
-  background: #eee6dc;
-  border-radius: 20px;
-  padding: 3px;
-  margin-bottom: 20px;
-  overflow: auto;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  background: #eee6dc; /* Define el fondo. */
+  border-radius: 20px; /* Redondea las esquinas. */
+  padding: 3px; /* Configura el espacio interior. */
+  margin-bottom: 20px; /* Establece la separación inferior. */
+  overflow: auto; /* Controla qué ocurre con el contenido que desborda. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .tab {
-  flex: 1;
-  min-width: 120px;
-  border: 0;
-  background: transparent;
-  padding: 9px 15px;
-  border-radius: 18px;
-  cursor: pointer;
+  flex: 1; /* Indica cómo crece o se encoge un elemento flexible. */
+  min-width: 120px; /* Establece el ancho mínimo permitido. */
+  border: 0; /* Define el borde del elemento. */
+  background: transparent; /* Define el fondo. */
+  padding: 9px 15px; /* Configura el espacio interior. */
+  border-radius: 18px; /* Redondea las esquinas. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .tab.active {
-  background: var(--wine);
-  color: #fff;
+  background: var(--wine); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .tab-panel {
-  display: none;
+  display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .tab-panel.active {
-  display: block;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(4, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 14px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card {
-  border-radius: 7px;
-  padding-bottom: 12px;
-  cursor: pointer;
-  transition: 0.2s;
+  border-radius: 7px; /* Redondea las esquinas. */
+  padding-bottom: 12px; /* Configura el espacio interior inferior. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
+  transition: 0.2s; /* Anima cambios de propiedades de forma gradual. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-4px); /* Mueve, escala o rota visualmente el elemento. */
+  box-shadow: var(--shadow); /* Aplica una sombra exterior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card img {
-  height: 150px;
-  object-fit: cover;
+  height: 150px; /* Define la altura del elemento. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
 }
 .mini-card h3,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .mini-card span {
-  padding-inline: 12px;
+  padding-inline: 12px; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .empty-panel {
-  padding: 42px;
-  text-align: center;
-  background: #fff;
-  border: 1px dashed #cfbeb0;
-  color: var(--muted);
+  padding: 42px; /* Configura el espacio interior. */
+  text-align: center; /* Alinea el texto. */
+  background: #fff; /* Define el fondo. */
+  border: 1px dashed #cfbeb0; /* Define el borde del elemento. */
+  color: var(--muted); /* Define el color del texto o elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(3, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 16px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-card {
-  min-height: 220px;
-  border-radius: 7px;
-  padding: 24px;
-  color: #fff;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
+  min-height: 220px; /* Establece la altura mínima. */
+  border-radius: 7px; /* Redondea las esquinas. */
+  padding: 24px; /* Configura el espacio interior. */
+  color: #fff; /* Define el color del texto o elemento. */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo. */
+  background-position: center; /* Ubica la imagen de fondo. */
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
+  overflow: hidden; /* Controla qué ocurre con el contenido que desborda. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15));
+  content: ""; /* Inserta contenido generado por CSS. */
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  inset: 0; /* Personaliza esta propiedad visual del elemento. */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15)); /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-card > * {
-  position: relative;
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-card.green {
-  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85");
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85"); /* Establece una imagen o degradado de fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-card.brown {
-  background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85");
+  background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85"); /* Establece una imagen o degradado de fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .promo-card h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 35px;
-  margin: 4px 0;
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-size: 35px; /* Define el tamaño de letra. */
+  margin: 4px 0; /* Configura el margen exterior del elemento. */
 }
 .delivery,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  min-height: 300px;
-  background: #f7efe4;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: 1fr 1.25fr; /* Define las columnas de la cuadrícula. */
+  min-height: 300px; /* Establece la altura mínima. */
+  background: #f7efe4; /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .delivery-image {
   background: url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85")
     center/cover;
 }
 .delivery-copy,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .about-copy {
-  padding: 50px clamp(30px, 6vw, 90px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  padding: 50px clamp(30px, 6vw, 90px); /* Configura el espacio interior. */
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  flex-direction: column; /* Determina la orientación de elementos flexibles. */
+  align-items: flex-start; /* Alinea los elementos en el eje transversal. */
+  justify-content: center; /* Distribuye los elementos en el eje principal. */
 }
 .delivery h2,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .about h2 {
-  font-size: 38px;
-  margin: 0 0 10px;
+  font-size: 38px; /* Define el tamaño de letra. */
+  margin: 0 0 10px; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .delivery-badges {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 12px 0 24px;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  gap: 10px; /* Establece el espacio entre elementos de grid o flex. */
+  flex-wrap: wrap; /* Permite o impide que los elementos flexibles salten de línea. */
+  margin: 12px 0 24px; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .delivery-badges span {
-  background: #fff;
-  border: 1px solid var(--line);
-  padding: 7px 12px;
-  border-radius: 999px;
-  font-size: 13px;
+  background: #fff; /* Define el fondo. */
+  border: 1px solid var(--line); /* Define el borde del elemento. */
+  padding: 7px 12px; /* Configura el espacio interior. */
+  border-radius: 999px; /* Redondea las esquinas. */
+  font-size: 13px; /* Define el tamaño de letra. */
 }
+/* Estilos de la galería: tarjetas, filtros, scroll y visor ampliado. */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(5, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 10px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Estilos de la galería: tarjetas, filtros, scroll y visor ampliado. */
 .gallery img {
-  height: 145px;
-  object-fit: cover;
-  border-radius: 6px;
+  height: 145px; /* Define la altura del elemento. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
+  border-radius: 6px; /* Redondea las esquinas. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .about {
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.1fr 1fr; /* Define las columnas de la cuadrícula. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .about-image {
   background: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=85")
     center/cover;
-  min-height: 320px;
+  min-height: 320px; /* Establece la altura mínima. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .visit {
-  padding: 42px 0;
-  background: #fff;
+  padding: 42px 0; /* Configura el espacio interior. */
+  background: #fff; /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .visit-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr 1fr;
-  align-items: center;
-  gap: 26px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: 1fr 1.1fr 1fr; /* Define las columnas de la cuadrícula. */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  gap: 26px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .map-placeholder {
-  height: 165px;
-  border-radius: 8px;
+  height: 165px; /* Define la altura del elemento. */
+  border-radius: 8px; /* Redondea las esquinas. */
   background:
     linear-gradient(
       30deg,
@@ -536,572 +633,694 @@ select {
       #ddd 87.5%
     ),
     #eee;
-  background-size: 80px 140px;
-  display: grid;
-  place-items: center;
+  background-size: 80px 140px; /* Ajusta el tamaño de la imagen de fondo. */
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  place-items: center; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .pin {
-  font-size: 44px;
+  font-size: 44px; /* Define el tamaño de letra. */
 }
+/* Estilos del pie de página. */
 .footer {
-  background: linear-gradient(90deg, #4a150f, #8a1e1e, #4b140f);
-  color: #fff;
-  padding-top: 28px;
+  background: linear-gradient(90deg, #4a150f, #8a1e1e, #4b140f); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  padding-top: 28px; /* Reserva espacio en la parte superior. */
 }
+/* Estilos del pie de página. */
 .footer-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
-  gap: 20px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: 1fr 2fr 1fr; /* Define las columnas de la cuadrícula. */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  gap: 20px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Estilos del pie de página. */
 .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  font-size: 13px;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  justify-content: center; /* Distribuye los elementos en el eje principal. */
+  gap: 16px; /* Establece el espacio entre elementos de grid o flex. */
+  flex-wrap: wrap; /* Permite o impide que los elementos flexibles salten de línea. */
+  font-size: 13px; /* Define el tamaño de letra. */
 }
+/* Estilos del pie de página. */
 .footer-note {
-  text-align: right;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
+  text-align: right; /* Alinea el texto. */
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-style: italic; /* Define la inclinación de la letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .copyright {
-  text-align: center;
-  font-size: 11px;
-  opacity: 0.7;
-  padding: 20px;
+  text-align: center; /* Alinea el texto. */
+  font-size: 11px; /* Define el tamaño de letra. */
+  opacity: 0.7; /* Controla la transparencia. */
+  padding: 20px; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .whatsapp-fab {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 99;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: #25d366;
-  color: #fff;
-  font-size: 28px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  position: fixed; /* Define cómo se posiciona respecto al documento o contenedor. */
+  right: 20px; /* Indica la distancia al borde derecho. */
+  bottom: 20px; /* Indica la distancia al borde inferior. */
+  z-index: 99; /* Define qué elemento se dibuja delante cuando se superponen. */
+  width: 54px; /* Define el ancho del elemento. */
+  height: 54px; /* Define la altura del elemento. */
+  border-radius: 50%; /* Redondea las esquinas. */
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  place-items: center; /* Personaliza esta propiedad visual del elemento. */
+  background: #25d366; /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  font-size: 28px; /* Define el tamaño de letra. */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22); /* Aplica una sombra exterior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .center-title {
-  text-align: center;
-  margin-bottom: 25px;
+  text-align: center; /* Alinea el texto. */
+  margin-bottom: 25px; /* Establece la separación inferior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-types {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(5, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 12px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-types article {
-  border: 1px solid var(--line);
-  background: #fff;
-  border-radius: 7px;
-  overflow: hidden;
-  text-align: center;
-  font-weight: 700;
+  border: 1px solid var(--line); /* Define el borde del elemento. */
+  background: #fff; /* Define el fondo. */
+  border-radius: 7px; /* Redondea las esquinas. */
+  overflow: hidden; /* Controla qué ocurre con el contenido que desborda. */
+  text-align: center; /* Alinea el texto. */
+  font-weight: 700; /* Define el grosor de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-types img {
-  height: 145px;
-  object-fit: cover;
+  height: 145px; /* Define la altura del elemento. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-types span {
-  display: block;
-  padding: 10px 6px;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  padding: 10px 6px; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  text-align: center;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(5, 1fr); /* Define las columnas de la cuadrícula. */
+  text-align: center; /* Alinea el texto. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .service-grid article {
-  padding: 18px;
-  border-right: 1px solid var(--line);
+  padding: 18px; /* Configura el espacio interior. */
+  border-right: 1px solid var(--line); /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .service-grid article:last-child {
-  border: 0;
+  border: 0; /* Define el borde del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .service-grid span {
-  font-size: 28px;
-  color: var(--wine);
+  font-size: 28px; /* Define el tamaño de letra. */
+  color: var(--wine); /* Define el color del texto o elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .service-grid h3 {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 14px; /* Define el tamaño de letra. */
+  font-weight: 600; /* Define el grosor de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: stretch;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(3, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 20px; /* Establece el espacio entre elementos de grid o flex. */
+  align-items: stretch; /* Alinea los elementos en el eje transversal. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .price-card {
-  position: relative;
-  border: 1px solid var(--line);
-  background: #fbf6ef;
-  border-radius: 8px;
-  padding: 28px;
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
+  border: 1px solid var(--line); /* Define el borde del elemento. */
+  background: #fbf6ef; /* Define el fondo. */
+  border-radius: 8px; /* Redondea las esquinas. */
+  padding: 28px; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .price-card.featured {
-  border-color: #d39149;
-  box-shadow: var(--shadow);
-  background: #fff;
+  border-color: #d39149; /* Establece el color del borde. */
+  box-shadow: var(--shadow); /* Aplica una sombra exterior. */
+  background: #fff; /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .price-card h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 26px;
-  margin-top: 0;
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-size: 26px; /* Define el tamaño de letra. */
+  margin-top: 0; /* Establece la separación superior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .price-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+  list-style: none; /* Personaliza esta propiedad visual del elemento. */
+  padding: 0; /* Configura el espacio interior. */
+  margin: 20px 0; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .price-card li {
-  margin: 8px 0;
+  margin: 8px 0; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .price-card li::before {
-  content: "✓";
-  color: #b64c23;
-  font-weight: 700;
-  margin-right: 9px;
+  content: "✓"; /* Inserta contenido generado por CSS. */
+  color: #b64c23; /* Define el color del texto o elemento. */
+  font-weight: 700; /* Define el grosor de letra. */
+  margin-right: 9px; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .badge {
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--wine);
-  color: #fff;
-  border-radius: 999px;
-  padding: 6px 24px;
-  font-size: 12px;
-  font-weight: 700;
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  top: -15px; /* Indica la distancia al borde superior. */
+  left: 50%; /* Indica la distancia al borde izquierdo. */
+  transform: translateX(-50%); /* Mueve, escala o rota visualmente el elemento. */
+  background: var(--wine); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  border-radius: 999px; /* Redondea las esquinas. */
+  padding: 6px 24px; /* Configura el espacio interior. */
+  font-size: 12px; /* Define el tamaño de letra. */
+  font-weight: 700; /* Define el grosor de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  text-align: center;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: repeat(4, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 18px; /* Establece el espacio entre elementos de grid o flex. */
+  text-align: center; /* Alinea el texto. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .steps span {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  margin: auto;
-  border-radius: 50%;
-  background: var(--wine);
-  color: #fff;
-  font-weight: 700;
+  width: 42px; /* Define el ancho del elemento. */
+  height: 42px; /* Define la altura del elemento. */
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  place-items: center; /* Personaliza esta propiedad visual del elemento. */
+  margin: auto; /* Configura el margen exterior del elemento. */
+  border-radius: 50%; /* Redondea las esquinas. */
+  background: var(--wine); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  font-weight: 700; /* Define el grosor de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .steps h3 {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Establece la separación inferior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .steps p {
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 13px;
+  margin-top: 3px; /* Establece la separación superior. */
+  color: var(--muted); /* Define el color del texto o elemento. */
+  font-size: 13px; /* Define el tamaño de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-gallery {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* Define las columnas de la cuadrícula. */
+  gap: 10px; /* Establece el espacio entre elementos de grid o flex. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-gallery.active {
-  display: grid;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-gallery img {
-  height: 180px;
-  object-fit: cover;
-  border-radius: 7px;
+  height: 180px; /* Define la altura del elemento. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
+  border-radius: 7px; /* Redondea las esquinas. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .testimonial-section {
-  padding: 58px 0;
-  background: #fff;
+  padding: 58px 0; /* Configura el espacio interior. */
+  background: #fff; /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .testimonial {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 18px;
-  max-width: 760px;
-  margin: auto;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: auto 1fr auto; /* Define las columnas de la cuadrícula. */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  gap: 18px; /* Establece el espacio entre elementos de grid o flex. */
+  max-width: 760px; /* Limita el ancho máximo. */
+  margin: auto; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .testimonial button {
-  border: 1px solid #c9b8aa;
-  background: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 26px;
-  cursor: pointer;
+  border: 1px solid #c9b8aa; /* Define el borde del elemento. */
+  background: #fff; /* Define el fondo. */
+  width: 40px; /* Define el ancho del elemento. */
+  height: 40px; /* Define la altura del elemento. */
+  border-radius: 50%; /* Redondea las esquinas. */
+  font-size: 26px; /* Define el tamaño de letra. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .testimonial blockquote {
-  margin: 0;
-  background: #fffaf4;
-  border: 1px solid var(--line);
-  padding: 30px;
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
+  margin: 0; /* Configura el margen exterior del elemento. */
+  background: #fffaf4; /* Define el fondo. */
+  border: 1px solid var(--line); /* Define el borde del elemento. */
+  padding: 30px; /* Configura el espacio interior. */
+  text-align: center; /* Alinea el texto. */
+  font-family: "Playfair Display", serif; /* Elige la tipografía usada. */
+  font-size: 20px; /* Define el tamaño de letra. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .stars {
-  text-align: center;
-  color: #d4861d;
-  margin-top: 15px;
-  letter-spacing: 3px;
+  text-align: center; /* Alinea el texto. */
+  color: #d4861d; /* Define el color del texto o elemento. */
+  margin-top: 15px; /* Establece la separación superior. */
+  letter-spacing: 3px; /* Ajusta la separación entre letras. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-cta {
-  background: linear-gradient(90deg, #4a170f, #6e2a19);
-  color: #fff;
-  padding: 50px 0;
+  background: linear-gradient(90deg, #4a170f, #6e2a19); /* Define el fondo. */
+  color: #fff; /* Define el color del texto o elemento. */
+  padding: 50px 0; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .cta-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  align-items: center;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: 1.2fr 1fr; /* Define las columnas de la cuadrícula. */
+  gap: 40px; /* Establece el espacio entre elementos de grid o flex. */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-cta h2 {
-  font-size: 38px;
-  margin: 0;
+  font-size: 38px; /* Define el tamaño de letra. */
+  margin: 0; /* Configura el margen exterior del elemento. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-cta form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
+  gap: 10px; /* Establece el espacio entre elementos de grid o flex. */
 }
 .event-cta input,
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-cta select {
-  padding: 12px 13px;
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.92);
+  padding: 12px 13px; /* Configura el espacio interior. */
+  border-radius: 5px; /* Redondea las esquinas. */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Define el borde del elemento. */
+  background: rgba(255, 255, 255, 0.92); /* Define el fondo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .event-cta button {
-  grid-column: 1/-1;
+  grid-column: 1/-1; /* Indica cuántas columnas ocupa el elemento. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal {
-  position: fixed;
-  inset: 0;
-  z-index: 200;
-  display: none;
+  position: fixed; /* Define cómo se posiciona respecto al documento o contenedor. */
+  inset: 0; /* Personaliza esta propiedad visual del elemento. */
+  z-index: 200; /* Define qué elemento se dibuja delante cuando se superponen. */
+  display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
 }
+/* Estilos de las ventanas emergentes. */
 .modal.open {
-  display: grid;
-  place-items: center;
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  place-items: center; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(19, 10, 7, 0.72);
-  backdrop-filter: blur(3px);
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  inset: 0; /* Personaliza esta propiedad visual del elemento. */
+  background: rgba(19, 10, 7, 0.72); /* Define el fondo. */
+  backdrop-filter: blur(3px); /* Desenfoca lo que queda detrás de la barra. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal-card {
-  position: relative;
-  width: min(760px, calc(100% - 28px));
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  position: relative; /* Define cómo se posiciona respecto al documento o contenedor. */
+  width: min(760px, calc(100% - 28px)); /* Define el ancho del elemento. */
+  background: #fff; /* Define el fondo. */
+  border-radius: 10px; /* Redondea las esquinas. */
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35); /* Aplica una sombra exterior. */
+  overflow: hidden; /* Controla qué ocurre con el contenido que desborda. */
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal-card > img {
-  height: 100%;
-  min-height: 330px;
-  object-fit: cover;
+  height: 100%; /* Define la altura del elemento. */
+  min-height: 330px; /* Establece la altura mínima. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal-body {
-  padding: 32px;
+  padding: 32px; /* Configura el espacio interior. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal-close {
-  position: absolute;
-  right: 10px;
-  top: 8px;
-  border: 0;
-  background: #fff;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  font-size: 25px;
-  cursor: pointer;
-  z-index: 2;
+  position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+  right: 10px; /* Indica la distancia al borde derecho. */
+  top: 8px; /* Indica la distancia al borde superior. */
+  border: 0; /* Define el borde del elemento. */
+  background: #fff; /* Define el fondo. */
+  width: 34px; /* Define el ancho del elemento. */
+  height: 34px; /* Define la altura del elemento. */
+  border-radius: 50%; /* Redondea las esquinas. */
+  font-size: 25px; /* Define el tamaño de letra. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
+  z-index: 2; /* Define qué elemento se dibuja delante cuando se superponen. */
 }
+/* Estilos de las ventanas emergentes. */
 .modal-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  margin-top: 25px;
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  align-items: center; /* Alinea los elementos en el eje transversal. */
+  justify-content: space-between; /* Distribuye los elementos en el eje principal. */
+  gap: 15px; /* Establece el espacio entre elementos de grid o flex. */
+  margin-top: 25px; /* Establece la separación superior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .package-modal-card {
-  display: block;
-  max-width: 620px;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  max-width: 620px; /* Limita el ancho máximo. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .accordion details {
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  margin: 8px 0;
-  padding: 12px 14px;
+  border: 1px solid var(--line); /* Define el borde del elemento. */
+  border-radius: 6px; /* Redondea las esquinas. */
+  margin: 8px 0; /* Configura el margen exterior del elemento. */
+  padding: 12px 14px; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .accordion summary {
-  font-weight: 700;
-  cursor: pointer;
+  font-weight: 700; /* Define el grosor de letra. */
+  cursor: pointer; /* Indica el tipo de puntero al pasar el mouse. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 .accordion p {
-  color: var(--muted);
+  color: var(--muted); /* Define el color del texto o elemento. */
 }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (max-width: 900px) {
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .menu-btn {
-    display: block;
-    margin-left: auto;
+    display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+    margin-left: auto; /* Personaliza esta propiedad visual del elemento. */
   }
+  /* Estilos de la cabecera, logotipo y navegación. */
   .nav-cta {
-    display: none;
+    display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .main-nav {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 74px;
-    background: #35120d;
-    padding: 14px 22px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
+    display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+    position: absolute; /* Define cómo se posiciona respecto al documento o contenedor. */
+    left: 0; /* Indica la distancia al borde izquierdo. */
+    right: 0; /* Indica la distancia al borde derecho. */
+    top: 74px; /* Indica la distancia al borde superior. */
+    background: #35120d; /* Define el fondo. */
+    padding: 14px 22px; /* Configura el espacio interior. */
+    flex-direction: column; /* Determina la orientación de elementos flexibles. */
+    align-items: stretch; /* Alinea los elementos en el eje transversal. */
+    gap: 0; /* Establece el espacio entre elementos de grid o flex. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .main-nav.open {
-    display: flex;
+    display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .main-nav a {
-    padding: 13px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 0; /* Configura el espacio interior. */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Define el borde inferior. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .feature-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .feature-grid article:nth-child(2) {
-    border-right: 0;
+    border-right: 0; /* Personaliza esta propiedad visual del elemento. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .menu-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
   .promo-grid,
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .pricing-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Estilos de la galería: tarjetas, filtros, scroll y visor ampliado. */
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .event-types {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .service-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .service-grid article {
-    border: 0;
-    border-bottom: 1px solid var(--line);
+    border: 0; /* Define el borde del elemento. */
+    border-bottom: 1px solid var(--line); /* Define el borde inferior. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .steps {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .event-gallery.active {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
   .visit-grid,
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .cta-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Estilos del pie de página. */
   .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
+    text-align: center; /* Alinea el texto. */
   }
+  /* Estilos del pie de página. */
   .footer-note {
-    text-align: center;
+    text-align: center; /* Alinea el texto. */
   }
   .delivery,
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
   .delivery-image,
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .about-image {
-    min-height: 260px;
+    min-height: 260px; /* Establece la altura mínima. */
   }
 }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (max-width: 620px) {
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .container {
-    width: min(100% - 26px, 1180px);
+    width: min(100% - 26px, 1180px); /* Define el ancho del elemento. */
   }
+  /* Estilos de portada y su imagen de fondo. */
   .hero {
-    min-height: 500px;
+    min-height: 500px; /* Establece la altura mínima. */
   }
+  /* Estilos de portada y su imagen de fondo. */
   .hero-script {
-    display: none;
+    display: none; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
   }
+  /* Estilos de portada y su imagen de fondo. */
   .hero h1 {
-    font-size: 43px;
+    font-size: 43px; /* Define el tamaño de letra. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .features .container {
-    width: 100%;
+    width: 100%; /* Define el ancho del elemento. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .feature-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .feature-grid article {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    border-right: 0; /* Personaliza esta propiedad visual del elemento. */
+    border-bottom: 1px solid var(--line); /* Define el borde inferior. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .section {
-    padding: 48px 0;
+    padding: 48px 0; /* Configura el espacio interior. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .section-title {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos en el eje transversal. */
+    flex-direction: column; /* Determina la orientación de elementos flexibles. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .menu-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Estilos de la galería: tarjetas, filtros, scroll y visor ampliado. */
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Estilos de la galería: tarjetas, filtros, scroll y visor ampliado. */
   .gallery img {
-    height: 130px;
+    height: 130px; /* Define la altura del elemento. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .event-types {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .service-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .steps {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Estilos de las ventanas emergentes. */
   .modal-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Estilos de las ventanas emergentes. */
   .modal-card > img {
-    min-height: 190px;
-    height: 190px;
+    min-height: 190px; /* Establece la altura mínima. */
+    height: 190px; /* Define la altura del elemento. */
   }
+  /* Estilos de las ventanas emergentes. */
   .modal-body {
-    padding: 24px;
+    padding: 24px; /* Configura el espacio interior. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .event-cta form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Define las columnas de la cuadrícula. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   .event-cta button {
-    grid-column: auto;
+    grid-column: auto; /* Indica cuántas columnas ocupa el elemento. */
   }
 }
 
 
 /* Featured dishes: responsive, snap-aligned cards and unobstructed controls. */
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 #featuredCarousel {
-  grid-auto-columns: calc((100% - 54px) / 4);
-  gap: 18px;
-  scroll-snap-type: x mandatory;
-  scroll-padding-inline: 0;
-  overscroll-behavior-x: contain;
-  padding-bottom: 3px;
+  grid-auto-columns: calc((100% - 54px) / 4); /* Define el ancho de las columnas creadas automáticamente. */
+  gap: 18px; /* Establece el espacio entre elementos de grid o flex. */
+  scroll-snap-type: x mandatory; /* Activa ajuste a posiciones al desplazar. */
+  scroll-padding-inline: 0; /* Personaliza esta propiedad visual del elemento. */
+  overscroll-behavior-x: contain; /* Personaliza esta propiedad visual del elemento. */
+  padding-bottom: 3px; /* Configura el espacio interior inferior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 #featuredCarousel .food-card {
-  min-width: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  scroll-snap-align: start;
-  border-radius: 14px;
-  transition: box-shadow .2s ease, transform .2s ease;
+  min-width: 0; /* Establece el ancho mínimo permitido. */
+  height: 100%; /* Define la altura del elemento. */
+  display: flex; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  flex-direction: column; /* Determina la orientación de elementos flexibles. */
+  scroll-snap-align: start; /* Indica el punto al que se ajusta cada tarjeta. */
+  border-radius: 14px; /* Redondea las esquinas. */
+  transition: box-shadow .2s ease, transform .2s ease; /* Anima cambios de propiedades de forma gradual. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 #featuredCarousel .food-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(47, 28, 19, .1);
+  transform: translateY(-3px); /* Mueve, escala o rota visualmente el elemento. */
+  box-shadow: 0 12px 28px rgba(47, 28, 19, .1); /* Aplica una sombra exterior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 #featuredCarousel .food-card img {
-  display: block;
-  width: 100%;
-  height: 190px;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  display: block; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  width: 100%; /* Define el ancho del elemento. */
+  height: 190px; /* Define la altura del elemento. */
+  aspect-ratio: 4 / 3; /* Define la proporción entre ancho y alto. */
+  object-fit: cover; /* Adapta una imagen a su contenedor sin deformarla. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 #featuredCarousel .food-card > div {
-  flex: 1;
-  padding: 17px 18px 19px;
+  flex: 1; /* Indica cómo crece o se encoge un elemento flexible. */
+  padding: 17px 18px 19px; /* Configura el espacio interior. */
 }
+/* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
 #featuredCarousel .food-card h3 {
-  font-size: 19px;
-  line-height: 1.35;
+  font-size: 19px; /* Define el tamaño de letra. */
+  line-height: 1.35; /* Controla el espacio entre líneas. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-shell {
-  padding-bottom: 58px;
+  padding-bottom: 58px; /* Configura el espacio interior inferior. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-arrow {
-  top: auto;
-  bottom: 0;
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  line-height: 1;
-  font-size: 27px;
-  box-shadow: none;
-  transition: background .2s ease, opacity .2s ease;
+  top: auto; /* Indica la distancia al borde superior. */
+  bottom: 0; /* Indica la distancia al borde inferior. */
+  width: 42px; /* Define el ancho del elemento. */
+  height: 42px; /* Define la altura del elemento. */
+  display: grid; /* Determina el modelo de disposición (bloque, flex, grid, etc.). */
+  place-items: center; /* Personaliza esta propiedad visual del elemento. */
+  line-height: 1; /* Controla el espacio entre líneas. */
+  font-size: 27px; /* Define el tamaño de letra. */
+  box-shadow: none; /* Aplica una sombra exterior. */
+  transition: background .2s ease, opacity .2s ease; /* Anima cambios de propiedades de forma gradual. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-arrow.prev {
-  left: auto;
-  right: 52px;
+  left: auto; /* Indica la distancia al borde izquierdo. */
+  right: 52px; /* Indica la distancia al borde derecho. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-arrow.next {
-  right: 0;
+  right: 0; /* Indica la distancia al borde derecho. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-arrow:hover:not(:disabled) {
-  background: var(--wine);
+  background: var(--wine); /* Define el fondo. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-arrow:focus-visible {
-  outline: 3px solid var(--wine);
-  outline-offset: 3px;
+  outline: 3px solid var(--wine); /* Personaliza esta propiedad visual del elemento. */
+  outline-offset: 3px; /* Personaliza esta propiedad visual del elemento. */
 }
+/* Estilos del carrusel, tarjetas y controles. */
 #carta .carousel-arrow:disabled {
-  opacity: .3;
-  cursor: default;
+  opacity: .3; /* Controla la transparencia. */
+  cursor: default; /* Indica el tipo de puntero al pasar el mouse. */
 }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (max-width: 1050px) {
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel {
-    grid-auto-columns: calc((100% - 36px) / 3);
+    grid-auto-columns: calc((100% - 36px) / 3); /* Define el ancho de las columnas creadas automáticamente. */
   }
 }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (max-width: 760px) {
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel {
-    grid-auto-columns: calc((100% - 18px) / 2);
+    grid-auto-columns: calc((100% - 18px) / 2); /* Define el ancho de las columnas creadas automáticamente. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel .food-card img {
-    height: 175px;
+    height: 175px; /* Define la altura del elemento. */
   }
 }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (max-width: 520px) {
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 100%; /* Define el ancho de las columnas creadas automáticamente. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel .food-card img {
-    height: 210px;
+    height: 210px; /* Define la altura del elemento. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #carta .section-title {
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-wrap: wrap; /* Permite o impide que los elementos flexibles salten de línea. */
+    gap: 12px; /* Establece el espacio entre elementos de grid o flex. */
   }
 }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (prefers-reduced-motion: reduce) {
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel {
-    scroll-behavior: auto;
+    scroll-behavior: auto; /* Controla si el desplazamiento se anima suavemente. */
   }
+  /* Selector CSS: estos estilos se aplican a los elementos que coinciden con la regla. */
   #featuredCarousel .food-card {
-    transition: none;
+    transition: none; /* Anima cambios de propiedades de forma gradual. */
   }
 }
 
@@ -1132,8 +1351,11 @@ select {
 .gallery-lightbox-figure figcaption { color:#fff; margin-top:16px; text-align:center; font-weight:600; }
 .gallery-lightbox button { border:1px solid #fff5; color:white; background:#ffffff1a; cursor:pointer; width:42px; height:42px; border-radius:50%; font-size:29px; flex-shrink:0; }
 .gallery-lightbox-close { position:absolute; top:14px; right:20px; }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media(max-width:900px) { .gallery-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media(max-width:650px) { .gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; } .gallery-tile:nth-child(n) { grid-column:span 1; aspect-ratio:4/5; border-radius:12px; } .gallery-tile-label { font-size:13px; bottom:12px; left:12px; } .gallery-lightbox { gap:4px; padding-inline:7px; } .gallery-lightbox button { width:33px; height:38px; } }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media(prefers-reduced-motion:reduce) { .gallery-tile img,.gallery-filter { transition:none; } }
 
 /* Limitar la galería sin alargar la página principal. */
@@ -1143,12 +1365,15 @@ select {
 .gallery-scroll-region::-webkit-scrollbar-track { background:#ebddd0; border-radius:12px; }
 .gallery-scroll-region::-webkit-scrollbar-thumb { background:#a76c55; border-radius:12px; border:2px solid #ebddd0; }
 .gallery-scroll-region:focus-visible { outline:2px solid var(--wine); outline-offset:3px; }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media(max-width:650px) { .gallery-scroll-region { max-height:min(580px,68vh); padding-right:7px; } }
 
 /* Logo del restaurante: imagen circular transparente en ambas cabeceras. */
 .brand-logo { display:block; width:52px; height:52px; object-fit:contain; flex-shrink:0; }
+/* Reglas responsive: se aplican cuando se cumple la condición de ancho de pantalla. */
 @media (max-width:620px) { .brand-logo { width:43px; height:43px; } }
 
 /* La cabecera de cristal se superpone a la portada, sin tapar su contenido. */
 .hero-home, .hero-events { padding-top: 74px; }
+/* Compatibilidad: aplica estilos si el navegador cumple esta condición. */
 @supports not ((backdrop-filter: blur(1px))) { .site-header { background: rgba(38,16,12,.85); } }
